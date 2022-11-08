@@ -11,7 +11,7 @@ export const environment = {
     storageBucket: "gopal61288-01.appspot.com",               // same as firebase23
     messagingSenderId: "299268567166",                        // same as firebase23
     appId: "1:299268567166:web:95a5c0d489b1c009cfe82f",                     // this is DIFFERENT from firebase23
-    measurementId: "G-7VQ692RF2N"
+    measurementId: "G-7VQ692RF2N"                                           // this is DIFFERENT from firebase23
   }
 
   // NOTE: these are the firebase config settings for firebase23 project
