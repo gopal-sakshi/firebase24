@@ -15,6 +15,9 @@ export class AppComponent {
   // stopping because I do not know how to proceed...
   // looking into water-game-ui     for cordova & stuff
 
+  clubs:any = [];
+  playerInfo:any = {};
+
   ngOnInit() {
     this.subscribeToFirebase();
   }
@@ -22,10 +25,12 @@ export class AppComponent {
   subscribeToFirebase() {
     this.fireEventsService.footballClubsUpdated().subscribe(res => {
       console.log(res);
+      this.clubs = res;
     });
 
-    this.fireEventsService.playerDetailsUpdated().subscribe(res => {
+    this.fireEventsService.playerDetailsUpdated().subscribe(res => {      
       console.log(res);
+      this.playerInfo = res;
     });
   }
 }

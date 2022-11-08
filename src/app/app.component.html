@@ -1,11 +1,21 @@
-<div class="app-component-container">
-  <div class="add-clubs">
-    
+<div class="app-component-container" fxLayout="row" fxLayoutGap="20px">
+  <div fxLayout="column" fxLayoutGap="10px" class="edit-section">
+    <div class="add-clubs">
+      yet to be implemented
+    </div>
+    <div class="add-players">
+      yet to be implemented
+    </div>
+    <div class="edit-player">
+      yet to be implemented
+    </div>
   </div>
-  <div class="add-players">
-
-  </div>
-  <div class="edit-player">
-
-  </div>
+  <div fxLayout="column" fxLayoutGap="10px" class="display-section"> 
+    <div *ngFor="let club of clubs" class="show-clubs">
+      {{ club?.manager }}, {{ club?.stadium }}
+    </div>
+    <div class="show-player-info">
+      {{ playerInfo | json }}
+    </div>
+  </div>  
 </div>
