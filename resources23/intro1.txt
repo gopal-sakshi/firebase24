@@ -1,0 +1,8 @@
+it seems... v12 Angular wont work (or) throwing errors
+we need to upgrade to 13
+Duplicate identifier 'type'. firebase =======> this is the error
+
+
+https://stackoverflow.com/questions/74528785/error-ts2300-duplicate-identifier-type-in-angular-while-running-ng-build
+
+ng update @angular/core@13 @angular/cli@13 --force
